@@ -1,0 +1,50 @@
+Based on the information provided, I will create an Entity Relationship Model (ERM) to help the gym chain manage its clients and sessions more efficiently.
+
+Entities:
+
+Gymnasium
+Attributes:
+Name
+Address
+Telephone Number
+Description: A gymnasium is a physical location where members can register and attend sessions.
+Member
+Attributes:
+Unique Identifier
+Last Name
+First Name
+Address
+Date of Birth
+Gender
+Description: A member is an individual who registers at a gymnasium to attend sessions.
+Session
+Attributes:
+Type of Sport
+Schedule
+Maximum Capacity (20 members)
+Description: A session is a scheduled event led by one or two coaches, where members can participate.
+Coach
+Attributes:
+Last Name
+First Name
+Age
+Specialty
+Description: A coach is an individual who leads a session.
+Relationships:
+
+Gymnasium - Member (One-to-Many)
+A gymnasium can have multiple members registered, but a member can only register at one gymnasium.
+Session - Coach (Many-to-Many)
+A session can be led by one or two coaches, and a coach can lead multiple sessions.
+Session - Member (Many-to-Many)
+A session can accommodate multiple members, and a member can attend multiple sessions.
+Gymnasium - Session (One-to-Many)
+A gymnasium can have multiple sessions, but a session is only held at one gymnasium.
+Explanation:
+
+The Gymnasium entity represents the physical locations where members can register and attend sessions.
+The Member entity represents the individuals who register at a gymnasium to attend sessions.
+The Session entity represents the scheduled events led by coaches, where members can participate.
+The Coach entity represents the individuals who lead sessions.
+The relationships between entities are established based on the information provided, ensuring that each entity is connected to others in a meaningful way.
+This Entity Relationship Model provides a solid foundation for designing a database that can efficiently manage the gym chain's clients, sessions, and coaches.
